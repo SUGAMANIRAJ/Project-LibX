@@ -1,0 +1,62 @@
+﻿@page
+@model ProjectLibX.Pages.Index1Model
+@{
+}
+<style>
+    button {
+        margin: 20px;
+    }
+
+    label {
+        padding: 6px
+    }
+
+    input {
+        margin: 6px;
+    }
+
+
+    form {
+        width: 65%;
+    }
+</style>
+<form method="post">
+    <div>
+        
+    <div class="form-group">
+        <label asp-for="@Model.Student.RegNo">RegisterNumber</label>
+        <input asp-for="@Model.Student.RegNo" class="form-control" id="inp"/>
+        <span asp-validation-for="@Model.Student.RegNo" class="text-danger"></span>
+    </div>
+        <div class="form-group">
+        <label asp-for="@Model.Student.Name_of_the_Student">Name</label>
+        <input asp-for="@Model.Student.Name_of_the_Student" class="form-control" id="inp"  />
+        <span asp-validation-for="@Model.Student.Name_of_the_Student" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Student.SEM">Select Semester</label>
+        <select class="form-select" aria-label="Select None" asp-for="@Model.Student.SEM">
+            <option  selected>None</option>
+           <option value="1">3</option>
+            <option value="2">4</option>
+            <option value="3">5</option>
+            <option value="1">6</option>
+            <option value="2">7</option>
+            <option value="3">8</option>
+        </select>
+        </div>
+    <div class="form-group">
+        <label asp-for="@Model.Student.ContInfo">MobileNo</label>
+        <input asp-for="@Model.Student.ContInfo" class="form-control" id="inp"/>
+        <span asp-validation-for="@Model.Student.ContInfo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Student.Email">Email</label>
+        <input asp-for="@Model.Student.Email" class="form-control" id="inp"/>
+        <span asp-validation-for="@Model.Student.Email" class="text-danger"></span>
+    </div>
+        
+    <button type="submit" class="btn btn-success">Save</button>
+    <button class="btn btn-secondary" asp-page="Index">Back</button>
+   </div>
+</form>

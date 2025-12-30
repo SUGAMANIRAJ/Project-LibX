@@ -1,0 +1,164 @@
+﻿@page
+@model ProjectLibX.Pages.ActionsModel
+@{
+}
+<style>
+
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    table {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-collapse: collapse;
+        width: 800px;
+        height: 100px;
+        border: 1px solid #bdc3c7;
+        font-family: 'Roboto';
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    th {
+        color: white;
+        background-color: #3498DB;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:nth-child(odd) {
+        background-color: rgba(255,255,255,2);
+    }
+
+    th, td {
+        padding: 8px;
+    }
+    td,th{
+        text-align:center;
+    }
+    tr:hover {
+        transform: scale(1.04);
+        box-shadow: 2px 2px 8px #3498DB;
+    }
+</style>
+<body>
+    <lable>Id</lable>
+    <input asp-for="@Model.Student.ID"/>
+    <table>
+        <thead>
+            <tr>
+                <th>Books</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                @{
+                    if (Model.Student.Book1 == null)
+                    {
+                        <td>None</td>
+                        <td>
+                            <div class="btn btn-outline-success" api-page="AddBooks" api-route-id="@Model.Student.ID">Issue</div>
+                        </td>
+
+                    }
+                    else
+                    {
+                        <td>@Model.Student.Book1</td>
+                        <td>
+                            <div class="btn btn-outline-danger">Return</div>
+                        </td>
+                    }
+                }
+            </tr>
+            <tr>
+                @{
+                    if (Model.Student.Book2 == null)
+                    {
+                        <td>None</td>
+                        <td>
+                            <div class="btn btn-outline-success" api-page="AddBooks">Issue</div>
+                        </td>
+
+                    }
+                    else
+                    {
+                        <td>@Model.Student.Book2</td>
+                        <td>
+                            <div class="btn btn-outline-danger">Return</div>
+                        </td>
+                    }
+                }
+            </tr>
+            <tr>
+                @{
+                    if (Model.Student.Book3 == null)
+                    {
+                        <td>None</td>
+                       
+                        <td>
+                            <div class="btn btn-outline-success" api-page="AddBooks">Issue</div>
+                        </td>
+
+                        
+                    }
+                    else
+                    {
+                        <td>@Model.Student.Book3</td>
+                        <td>
+                            <div class="btn btn-outline-danger">Return</div>
+                        </td>
+                    }
+                }
+            </tr>
+            <tr>
+                @{
+                    if (Model.Student.Book4 == null)
+                    {
+                        <td>None</td>
+                        <td>
+                            <div class="btn btn-outline-success" api-page="AddBooks">Issue</div>
+                        </td>
+
+                    }
+                    else
+                    {
+                        <td>@Model.Student.Book4</td>
+
+                        <td>
+                            <div class="btn btn-outline-danger">Return</div>
+                        </td>
+                    }
+                }
+            </tr>
+            <tr>
+                @{
+                    if (Model.Student.Book5 == null)
+                    {
+                        <td>None</td>
+                        <td>
+                            <div class="btn btn-outline-success" api-page="AddBooks">Issue</div>
+                        </td>
+                    }
+                    else
+                    {
+                        <td>@Model.Student.Book5</td>
+                        <td>
+                            <div class="btn btn-outline-danger" >Return</div>
+                        </td>
+                    }
+                }
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+</body>
+<a class="btn btn-outline-info" asp-page="Index2">Back</a>

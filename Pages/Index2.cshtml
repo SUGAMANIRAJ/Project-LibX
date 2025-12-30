@@ -1,0 +1,90 @@
+﻿@page
+@model ProjectLibX.Pages.LibXLibraryModel
+@{
+}<style>
+     table {
+         overflow: scroll;
+         overflow-y: scroll;
+         position: static;
+         margin-top: 0px;
+         margin-bottom: 0px;
+         margin-left: auto;
+         margin-right: auto;
+         border-collapse: collapse;
+         width: 80%;
+         border: 1px solid #bdc3c7;
+         font-family: 'Roboto';
+         box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+     }
+
+     .container-fluid {
+         font: italic;
+         color: #3498DB;
+         padding: 20px;
+     }
+
+     th {
+         color: white;
+         background-color: #3498DB;
+     }
+
+     tr:nth-child(even) {
+         background-color: #f2f2f2;
+     }
+
+     tr:nth-child(odd) {
+         background-color: rgba(255,255,255,2);
+     }
+
+     th, td {
+         padding: 8px;
+     }
+
+
+
+     tr:hover {
+         transform: scale(1.04);
+         box-shadow: 2px 2px 8px #3498DB;
+     }
+
+     .text{
+         text-align:center;
+         color:#fc5a03;
+         font-size:60px;
+         padding-bottom:10px;
+     }
+</style>
+<body>
+   
+    <div class="text"><i>Registered Students</i></div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>RegNo</th>
+                <th>Name</th>
+                <th>Sem</th>
+                <th>Contact</th>
+                <th>Email</th>
+                <th>Date Time</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var data in Model.Students)
+            {
+                <tr>
+                    <td>@data.RegNo</td>
+                    <td>@data.Name_of_the_Student</td>
+                    <td>@data.SEM</td>
+                    <td>@data.ContInfo</td>
+                    <td>@data.Email</td>
+                   
+                    <td><a class="btn btn-success" asp-page="AddBooks" asp-route-id="@data.ID">Issue</a> <a class="btn btn-danger" asp-page="Delete" asp-route-id="@data.ID">Return</a></td>
+                   
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</body>

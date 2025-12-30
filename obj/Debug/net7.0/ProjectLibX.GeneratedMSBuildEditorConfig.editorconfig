@@ -1,0 +1,87 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProjectLibX
+build_property.RootNamespace = ProjectLibX
+build_property.ProjectDir = C:\projects\ProjectLibX1\ProjectLibX\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\projects\ProjectLibX1\ProjectLibX
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/Actions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWN0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/AddBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQm9va3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/Books.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/LibXLibrary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGliWExpYnJhcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/Notify.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90aWZ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/NotifyIssue.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90aWZ5SXNzdWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/NotifyReturn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90aWZ5UmV0dXJuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projects/ProjectLibX1/ProjectLibX/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-pnhc8wvqnb

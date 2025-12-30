@@ -1,0 +1,88 @@
+﻿@page
+@model ProjectLibX.Pages.DeleteModel
+@{
+}
+<style>
+   button{
+       margin:20px;
+   }
+   label{
+       padding:6px
+   }
+
+    input {
+        margin: 6px;
+    }
+
+    form {
+        width: 65%;
+    }
+    #reset{
+        right:20%;
+    }
+
+</style>
+<form method="post">
+    
+        <input asp-for="@Model.Student.ID" hidden/>
+    <div class="form-group" hidden>
+        <label asp-for="@Model.Student.RegNo">RegisterNumber</label>
+        <input asp-for="@Model.Student.RegNo" class="form-control" />
+
+    </div>
+    <div class="form-group" hidden>
+        <label asp-for="@Model.Student.Name_of_the_Student">RegisterNumber</label>
+        <input asp-for="@Model.Student.Name_of_the_Student" class="form-control" />
+
+    </div>
+    <div class="form-group" hidden>
+        <label asp-for="@Model.Student.SEM">RegisterNumber</label>
+        <input asp-for="@Model.Student.SEM" class="form-control" />
+
+    </div>
+    <div class="form-group" hidden>
+        <label asp-for="@Model.Student.ContInfo">RegisterNumber</label>
+        <input asp-for="@Model.Student.ContInfo" class="form-control" />
+
+    </div>
+    <div class="form-group" hidden>
+        <label asp-for="@Model.Student.Email">RegisterNumber</label>
+        <input asp-for="@Model.Student.Email" class="form-control" />
+
+    </div>
+
+    <div class="form-group">
+
+        <label asp-for="@Model.Student.Book1">Book1</label>
+        <input type="text" asp-for="@Model.Student.Book1"  id="myInput1" placeholder="No Book Here" class="form-control" disabled>
+        <div class="btn btn-warning" onclick="document.getElementById('myInput1').value = ''" id="reset">Return</div>
+       
+       
+       
+    </div>
+        <div class="form-group">
+        <label asp-for="@Model.Student.Book2">Book2</label>
+        <input type="text" asp-for="@Model.Student.Book2" id="myInput2" placeholder="No Book Here" class="form-control" disabled>
+        <a class="btn btn-warning" onclick="document.getElementById('myInput2').value = ''" id="reset">Return</a>
+       </div>
+    <div class="form-group">
+        <label asp-for="@Model.Student.Book1">Book3</label>
+        <input type="text" asp-for="@Model.Student.Book3" id="myInput3" placeholder="No Book Here" class="form-control" disabled>
+        <div class="btn btn-warning" onclick="document.getElementById('myInput3').value = ''" id="reset">Return</div>
+       </div>
+    <div class="form-group">
+        <label asp-for="@Model.Student.Book4">Book4</label>
+        <input type="text" asp-for="@Model.Student.Book4" id="myInput4" placeholder="No Book Here" class="form-control" disabled>
+        <div class="btn btn-warning" onclick="document.getElementById('myInput4').value = ''" id="reset">Return</div>
+       
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Student.Book5">Book5</label>
+        <input type="text" asp-for="@Model.Student.Book5" id="myInput5" placeholder="No Book Here" class="form-control" disabled>
+        <div class="btn btn-warning" onclick="document.getElementById('myInput5').value = ''" id="reset">Return</div>
+       
+    </div>
+    <button class="btn btn-danger" type="submit">Confirm Return</button>
+    <button class="btn btn-secondary" asp-page="Index">Back</button>
+  
+</form>

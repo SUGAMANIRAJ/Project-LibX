@@ -1,0 +1,45 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<style>
+    
+   i{
+        color: #a232a8;
+        text-decoration:solid;
+      
+   }
+   #creater{
+       color:white;
+       font:italic;
+   }
+
+    .bgimg{
+        background-image: url(credits.jpg);
+        margin: 0;
+    }
+
+</style>
+<body>
+   <div class="bgimg">
+<div class="text-center">
+    <i class="display-4">Welcome to  Department Library of CSE</i>
+    
+</div>
+
+<div class="Container pt-5">
+    <div class="text-center">
+        <a class="btn btn-outline-primary" asp-page="Index1">Register a Student</a>
+    </div>
+</div>
+
+    <div class="Container pt-5">
+        <div class="text-center">
+            <a class="btn btn-outline-success" asp-page="Index2" >Already Registered ?</a>
+        </div>
+        </div>
+      
+ <div id="creater"><p>Created By Sugamaniraj & his friends from Cse 2022-26...</p></div>
+ </div>
+</body>
